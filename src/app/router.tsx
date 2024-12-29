@@ -1,11 +1,12 @@
 import { createBrowserRouter, Outlet } from 'react-router-dom';
-import HomePage from '../pages/HomePage/ui/Page';
-import NotFoundPage from '../pages/NotFoundPage/ui/Page';
+import { HomePage } from '../pages/HomePage';
 import { pageRoutes } from './routes';
+import { defaultLayout } from './layouts/defaultLayout';
+import NotFoundPage from '../pages/NotFoundPage/ui/Page';
 
 const router = createBrowserRouter([
   {
-    // element: <CommonLayout />,
+    element: defaultLayout,
     children: [
       { path: pageRoutes.home.url, element: <HomePage /> },
       { path: '*', element: <NotFoundPage /> },
