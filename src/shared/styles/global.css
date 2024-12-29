@@ -1,0 +1,68 @@
+/* global.css */
+
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body 스타일 */
+  body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    /* background-color: #f9f9f9; */
+    color: #333;
+    background-color: #007bff;
+  }
+  
+  /* 링크 스타일 */
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  a:hover {
+    color: #007bff;
+  }
+  
+  /* 기본 컨테이너 */
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* 기본 버튼 */
+  button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* 유틸리티 클래스 */
+  .text-center {
+    text-align: center;
+  }
+  
+  .mt-1 {
+    margin-top: 10px;
+  }
+  
+  .mt-2 {
+    margin-top: 20px;
+  }
+  
+  .mt-3 {
+    margin-top: 30px;
+  }
+  
