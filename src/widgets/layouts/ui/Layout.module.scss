@@ -6,10 +6,12 @@
         min-height: 100%;
     }
     &__content {
+        padding: 0 16px;
         flex: 1 0 auto;
     }
     &__footer {
         flex: 0 0 auto;
     }
 }
+
 

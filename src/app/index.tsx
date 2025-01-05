@@ -7,11 +7,21 @@ import { PersistGate } from 'redux-persist/integration/react';
 import { appStore, persistedStore } from './stores';
 import router from './router';
 
+import { ThemeProvider, createTheme } from '@mui/material/styles';
+
+const darkTheme = createTheme({
+  palette: {
+    mode: 'dark',
+  },
+});
+
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <ReduxProvider store={appStore}>
       <PersistGate loading={null} persistor={persistedStore}>
-        <RouterProvider router={router} />
+        <ThemeProvider theme={darkTheme}>
+          <RouterProvider router={router} />
+        </ThemeProvider>
       </PersistGate>
     </ReduxProvider>
   </StrictMode>

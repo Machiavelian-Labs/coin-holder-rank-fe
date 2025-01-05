@@ -1,6 +1,6 @@
-import { Layout } from '../../shared/ui/Layouts/Layout';
-import { LayoutFooter } from '../../shared/ui/Footer/Footer';
-import { LayoutHeader } from '../../shared/ui/Header/Header';
+import { Layout } from '../../widgets/layouts/ui/Layout';
+import { LayoutFooter } from '../../widgets/footer/ui/Footer';
+import { LayoutHeader } from '../../widgets/header/ui/Header';
 
 export const defaultLayout = (
   <Layout headerSlot={<LayoutHeader />} FooterSlot={<LayoutFooter />} />

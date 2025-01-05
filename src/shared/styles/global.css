@@ -16,6 +16,8 @@ body {
     overflow-x: hidden;
 
     width: 1024px;
+    background-color: #060c1b;
+    color: #fff;
 }
 
 body,
@@ -82,6 +84,5 @@ a {
 @media (max-width: 1024px) {
     body {
         width: 100%;
-        background-color: aquamarine;
     }
 }
