@@ -1,6 +1,3 @@
-import { Icon } from '../../../shared/icons/ui/Icon'; // Ensure this path is correct or update it to the correct path
-import Chip from '@mui/material/Chip';
-import iconBitcoin from '../../../shared/assets/icons/symbol_bitcoin.png';
 import SearchIcon from '@mui/icons-material/Search';
 import { styled, alpha } from '@mui/material/styles';
 import InputBase from '@mui/material/InputBase';
@@ -15,10 +12,6 @@ export const Categories = () => {
     },
     marginLeft: 0,
     width: '100%',
-    [theme.breakpoints.up('sm')]: {
-      marginLeft: theme.spacing(1),
-      width: 'auto',
-    },
   }));
 
   const SearchIconWrapper = styled('div')(({ theme }) => ({
@@ -49,17 +42,14 @@ export const Categories = () => {
   }));
 
   return (
-    <div>
-      <Chip icon={<Icon img={iconBitcoin} />} variant="outlined" />
-      <Search>
-        <SearchIconWrapper>
-          <SearchIcon />
-        </SearchIconWrapper>
-        <StyledInputBase
-          placeholder="Search…"
-          inputProps={{ 'aria-label': 'search' }}
-        />
-      </Search>
-    </div>
+    <Search style={{ width: '100%', margin: '20px 0' }}>
+      <SearchIconWrapper>
+        <SearchIcon />
+      </SearchIconWrapper>
+      <StyledInputBase
+        placeholder="Search…"
+        inputProps={{ 'aria-label': 'search' }}
+      />
+    </Search>
   );
 };
