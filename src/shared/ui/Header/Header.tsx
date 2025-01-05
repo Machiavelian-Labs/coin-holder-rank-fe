@@ -1,4 +1,6 @@
+import css from './Header.module.scss';
+
 interface LayoutHeaderProps {}
 export const LayoutHeader: React.FC<LayoutHeaderProps> = () => {
-  return <header>Header</header>;
+  return <header>header</header>;
 };

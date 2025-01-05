@@ -1,68 +1,73 @@
-/* global.css */
-
-/* Reset CSS */
-* {
+body {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
     margin: 0;
-    padding: 0;
+
+    min-height: 100vh;
+    scroll-behavior: smooth;
+    text-rendering: optimizeSpeed;
+
+    overflow-x: hidden;
+}
+
+body,
+html,
+#root {
+    height: 100%;
+}
+
+._container {
+    max-width: 1230px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+*,
+*::before,
+*::after {
     box-sizing: border-box;
-  }
-  
-  /* Body 스타일 */
-  body {
-    font-family: 'Arial', sans-serif;
-    line-height: 1.6;
-    /* background-color: #f9f9f9; */
-    color: #333;
-    background-color: #007bff;
-  }
-  
-  /* 링크 스타일 */
-  a {
+}
+
+ol,
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+ul,
+ol,
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-weight: 400;
+}
+
+input,
+button {
+    outline: none;
+}
+
+a {
     text-decoration: none;
-    color: inherit;
-  }
-  
-  a:hover {
-    color: #007bff;
-  }
-  
-  /* 기본 컨테이너 */
-  .container {
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-  
-  /* 기본 버튼 */
-  button {
-    display: inline-block;
-    padding: 10px 20px;
-    font-size: 16px;
-    color: #fff;
-    background-color: #007bff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  button:hover {
-    background-color: #0056b3;
-  }
-  
-  /* 유틸리티 클래스 */
-  .text-center {
-    text-align: center;
-  }
-  
-  .mt-1 {
-    margin-top: 10px;
-  }
-  
-  .mt-2 {
-    margin-top: 20px;
-  }
-  
-  .mt-3 {
-    margin-top: 30px;
-  }
-  
+}
