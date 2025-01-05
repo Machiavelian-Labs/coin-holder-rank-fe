@@ -1,5 +1,5 @@
 import type { ReactNode } from 'react';
-import { Outlet, ScrollRestoration } from 'react-router-dom';
+import { Outlet } from 'react-router-dom';
 import css from './Layout.module.scss';
 import clsx from 'clsx';
 
